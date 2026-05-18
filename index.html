@@ -14,7 +14,6 @@
             overflow-x: hidden;
         }
 
-        /* Navigation */
         .nav {
             position: fixed;
             top: 0;
@@ -38,10 +37,7 @@
             text-transform: uppercase;
         }
 
-        .nav-progress {
-            display: flex;
-            gap: 6px;
-        }
+        .nav-progress { display: flex; gap: 6px; }
 
         .nav-dot {
             width: 10px;
@@ -64,7 +60,6 @@
             border-color: #1e40af;
         }
 
-        /* Sections */
         .section {
             min-height: 100vh;
             display: flex;
@@ -79,44 +74,6 @@
             width: 100%;
         }
 
-        /* Title Section */
-        .title-section {
-            text-align: center;
-        }
-
-        .title-section h1 {
-            font-size: 52px;
-            font-weight: 700;
-            line-height: 1.2;
-            margin-bottom: 24px;
-            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .title-section .subtitle {
-            font-size: 22px;
-            color: #64748b;
-            max-width: 650px;
-            margin: 0 auto 50px;
-            line-height: 1.6;
-        }
-
-        .title-meta {
-            display: flex;
-            justify-content: center;
-            gap: 40px;
-            color: #475569;
-            font-size: 14px;
-        }
-
-        .title-meta span {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* Opportunity/Solution Sections */
         .pain-header {
             display: inline-flex;
             align-items: center;
@@ -171,7 +128,6 @@
             max-width: 750px;
         }
 
-        /* Score card */
         .score-card {
             display: flex;
             gap: 30px;
@@ -202,19 +158,10 @@
             letter-spacing: 1px;
         }
 
-        .score-item.you .score-number {
-            color: #ef4444;
-        }
+        .score-item.you .score-number { color: #ef4444; }
+        .score-item.competitor .score-number { color: #3b82f6; }
+        .score-item.potential .score-number { color: #22c55e; }
 
-        .score-item.competitor .score-number {
-            color: #3b82f6;
-        }
-
-        .score-item.potential .score-number {
-            color: #22c55e;
-        }
-
-        /* Competitor table */
         .competitor-table {
             width: 100%;
             border-collapse: collapse;
@@ -250,23 +197,6 @@
             font-weight: 600;
         }
 
-        .rank-bar {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .rank-bar-fill {
-            height: 8px;
-            border-radius: 4px;
-            background: #3b82f6;
-        }
-
-        .rank-bar-fill.low {
-            background: #f59e0b;
-        }
-
-        /* Stats grid */
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -293,84 +223,9 @@
             color: #64748b;
         }
 
-        /* Process flow */
-        .process-flow {
-            margin: 40px 0;
-        }
-
-        .process-step {
-            display: flex;
-            align-items: flex-start;
-            gap: 24px;
-            margin-bottom: 0;
-            position: relative;
-            padding-bottom: 40px;
-        }
-
-        .process-step:last-child {
-            padding-bottom: 0;
-        }
-
-        .process-step::before {
-            content: '';
-            position: absolute;
-            left: 23px;
-            top: 48px;
-            bottom: 0;
-            width: 2px;
-            background: #1e293b;
-        }
-
-        .process-step:last-child::before {
-            display: none;
-        }
-
-        .step-number {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: #1e293b;
-            border: 2px solid #334155;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 18px;
-            color: #3b82f6;
-            flex-shrink: 0;
-        }
-
-        .step-content h4 {
-            font-size: 18px;
-            font-weight: 600;
-            margin-bottom: 6px;
-            color: #f1f5f9;
-        }
-
-        .step-content p {
-            font-size: 15px;
-            color: #64748b;
-            margin: 0;
-        }
-
-        .step-badge {
-            display: inline-block;
-            background: rgba(34, 197, 94, 0.1);
-            border: 1px solid rgba(34, 197, 94, 0.2);
-            color: #4ade80;
-            font-size: 11px;
-            font-weight: 600;
-            padding: 3px 10px;
-            border-radius: 100px;
-            margin-top: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        /* Channel cards */
         .channel-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 24px;
             margin: 35px 0;
         }
@@ -417,170 +272,60 @@
         .tag-email { background: rgba(59, 130, 246, 0.1); color: #60a5fa; }
         .tag-linkedin { background: rgba(99, 102, 241, 0.1); color: #818cf8; }
 
-        /* Comparison */
-        .comparison-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 24px;
-            margin: 30px 0;
-        }
-
-        .comparison-col {
-            background: #111827;
-            border: 1px solid #1e293b;
-            border-radius: 16px;
-            padding: 30px;
-        }
-
-        .comparison-col.pain-col {
-            border-color: rgba(234, 179, 8, 0.2);
-        }
-
-        .comparison-col.solution-col {
-            border-color: rgba(34, 197, 94, 0.2);
-        }
-
-        .comparison-col h4 {
-            font-size: 16px;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-
-        .pain-col h4 { color: #facc15; }
-        .solution-col h4 { color: #4ade80; }
-
-        .comparison-col ul {
-            list-style: none;
-            padding: 0;
-        }
-
-        .comparison-col ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #1e293b;
-            font-size: 15px;
-            color: #94a3b8;
-            display: flex;
-            align-items: flex-start;
-            gap: 10px;
-        }
-
-        .comparison-col ul li:last-child {
-            border-bottom: none;
-        }
-
-        .comparison-col ul li::before {
-            content: '×';
-            color: #ef4444;
-            font-weight: 700;
-            font-size: 18px;
-            flex-shrink: 0;
-        }
-
-        .solution-col ul li::before {
-            content: '✓';
-            color: #22c55e;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            text-align: center;
-            padding: 80px 40px;
-        }
-
-        .cta-section h2 {
-            font-size: 44px;
-            margin-bottom: 20px;
-            background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-
-        .cta-section p {
-            font-size: 20px;
-            color: #64748b;
-            max-width: 600px;
-            margin: 0 auto 40px;
-        }
-
-        .cta-box {
-            background: #111827;
-            border: 1px solid #1e293b;
-            border-radius: 16px;
-            padding: 40px;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .cta-box h3 {
-            color: #f1f5f9;
-            font-size: 22px;
-            margin-bottom: 20px;
-        }
-
-        .cta-steps {
-            text-align: left;
-            list-style: none;
-            padding: 0;
-        }
-
-        .cta-steps li {
-            padding: 12px 0;
-            font-size: 17px;
-            color: #94a3b8;
-            display: flex;
-            align-items: center;
-            gap: 14px;
-            border-bottom: 1px solid #1e293b;
-        }
-
-        .cta-steps li:last-child {
-            border-bottom: none;
-        }
-
-        .cta-steps .step-num {
-            width: 32px;
-            height: 32px;
-            border-radius: 50%;
-            background: rgba(59, 130, 246, 0.15);
-            color: #3b82f6;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            font-size: 14px;
-            flex-shrink: 0;
-        }
-
-        /* Divider */
-        .section-divider {
-            width: 60px;
-            height: 3px;
-            background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-            border-radius: 2px;
-            margin: 30px 0;
-        }
-
-        /* Emphasis text */
-        .emphasis {
-            color: #f1f5f9;
-            font-weight: 600;
-        }
-
+        .emphasis { color: #f1f5f9; font-weight: 600; }
         .text-red { color: #f87171; }
         .text-amber { color: #facc15; }
         .text-green { color: #4ade80; }
         .text-blue { color: #60a5fa; }
 
-        .client-name {
-            display: block;
-            font-size: 36px;
-            font-weight: 700;
-            color: #f1f5f9;
-            margin-bottom: 12px;
-            letter-spacing: 0.5px;
+        .seo-fix-box {
+            background: #111827;
+            border: 1px solid rgba(34, 197, 94, 0.2);
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
         }
 
-        /* Scroll indicator */
+        .seo-fix-box h3 {
+            color: #4ade80;
+            font-size: 22px;
+            margin-bottom: 16px;
+        }
+
+        .seo-fix-box p {
+            font-size: 16px;
+            color: #94a3b8;
+            line-height: 1.7;
+            margin: 0;
+        }
+
+        .seo-fix-stats {
+            display: flex;
+            gap: 30px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .seo-fix-stat {
+            text-align: center;
+            flex: 1;
+            min-width: 140px;
+        }
+
+        .seo-fix-stat .val {
+            font-size: 28px;
+            font-weight: 700;
+            color: #4ade80;
+        }
+
+        .seo-fix-stat .lbl {
+            font-size: 12px;
+            color: #64748b;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-top: 4px;
+        }
+
         .scroll-hint {
             position: absolute;
             bottom: 40px;
@@ -605,17 +350,29 @@
             height: 20px;
         }
 
-        /* Responsive */
-        @media (max-width: 768px) {
-            .section { padding: 80px 24px; }
-            .title-section h1 { font-size: 34px; }
-            .section h2 { font-size: 28px; }
-            .comparison-row { grid-template-columns: 1fr; }
-            .score-card { flex-direction: column; }
-            .nav { padding: 12px 20px; }
+        .footer-note {
+            margin-top: 50px;
+            color: #475569;
+            font-size: 14px;
         }
 
-        /* Fade in animation */
+        .footer-note p {
+            margin: 0 auto;
+            text-align: center;
+            max-width: 500px;
+            font-size: 14px;
+            color: #475569;
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 80px 24px; }
+            .section h2 { font-size: 28px; }
+            .score-card { flex-direction: column; }
+            .nav { padding: 12px 20px; }
+            .channel-grid { grid-template-columns: 1fr; }
+            .seo-fix-stats { flex-direction: column; gap: 16px; }
+        }
+
         .fade-in {
             opacity: 0;
             transform: translateY(30px);
@@ -634,42 +391,18 @@
 <nav class="nav">
     <div class="nav-brand">Simpl ABI</div>
     <div class="nav-progress">
-        <div class="nav-dot active" data-section="0" title="Intro"></div>
-        <div class="nav-dot" data-section="1" title="Google Visibility"></div>
-        <div class="nav-dot" data-section="2" title="Google Strategy"></div>
-        <div class="nav-dot" data-section="3" title="Your New Site"></div>
-        <div class="nav-dot" data-section="4" title="Meeting Growth"></div>
-        <div class="nav-dot" data-section="5" title="Meeting Pipeline"></div>
-        <div class="nav-dot" data-section="6" title="LinkedIn Opportunity"></div>
-        <div class="nav-dot" data-section="7" title="LinkedIn Strategy"></div>
-        <div class="nav-dot" data-section="8" title="How It Works"></div>
-        <div class="nav-dot" data-section="9" title="Next Steps"></div>
+        <div class="nav-dot active" data-section="0" title="Google Visibility"></div>
+        <div class="nav-dot" data-section="1" title="Your New Site"></div>
+        <div class="nav-dot" data-section="2" title="How We Get You Leads"></div>
     </div>
 </nav>
 
-<!-- Section 0: Title -->
+<!-- Page 1: The Problem — Google Visibility -->
 <section class="section" id="sec-0">
-    <div class="section-inner title-section fade-in">
-        <h1>We Did the Research.<br>Here's What We Found.</h1>
-        <p class="subtitle">This walkthrough shows you exactly where your marketing stands today, what's costing you clients, and the plan we've already started building to fix it. Scroll through at your own pace — each section explains what you're looking at.</p>
-        <span class="client-name">Prepared for Bryan McInerney</span>
-        <div class="title-meta">
-            <span>Intelligent Annuity Solutions, LLC</span>
-            <span>May 2026</span>
-        </div>
-    </div>
-    <div class="scroll-hint">
-        <span>Scroll</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-    </div>
-</section>
-
-<!-- Section 1: Google Pain -->
-<section class="section" id="sec-1">
     <div class="section-inner fade-in">
-        <div class="pain-header">📊 Google Search Audit Results</div>
-        <h2>Your ideal clients are searching Google right now.<br><span class="text-red">They're finding your competitors instead.</span></h2>
-        <p style="background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; max-width: 100%; margin-bottom: 30px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> We searched for every keyword your ideal client would type into Google — things like "annuity advisor hudson ohio" or "annuity fee analysis." Then we checked where checkannuity.com shows up in those results. <span class="text-red">Red means you're not appearing at all.</span></p>
+        <div class="pain-header">⚠ The Problem — Google Visibility</div>
+        <h2>Your ideal clients are searching for you.<br><span class="text-red">They're finding your competitors instead.</span></h2>
+        <p>We ran a full audit of checkannuity.com against the search terms your ideal clients actually type into Google. Here's what we found:</p>
 
         <div class="score-card">
             <div class="score-item you">
@@ -697,27 +430,27 @@
             <tbody>
                 <tr>
                     <td>"annuity advisor hudson ohio"</td>
-                    <td class="text-red">Not ranking — invisible</td>
+                    <td class="text-red">Not found (page 1–3)</td>
                     <td>Nye Wealth, UBS, Western Reserve Capital</td>
                 </tr>
                 <tr>
                     <td>"financial advisor hudson ohio"</td>
-                    <td class="text-red">Not ranking — invisible</td>
+                    <td class="text-red">Not found (page 1–3)</td>
                     <td>Nye Wealth, Brian Bishop CFP, UBS</td>
                 </tr>
                 <tr>
                     <td>"annuity review northeast ohio"</td>
-                    <td class="text-red">Not ranking — invisible</td>
+                    <td class="text-red">Not found (page 1–3)</td>
                     <td>Serious Money Ohio, Arcuri & Associates</td>
                 </tr>
                 <tr>
                     <td>"annuity fee analysis ohio"</td>
-                    <td class="text-red">Not ranking — invisible</td>
+                    <td class="text-red">Not found (page 1–5)</td>
                     <td>Bankrate, SmartAsset (national sites)</td>
                 </tr>
                 <tr>
                     <td>"wealth management akron cleveland"</td>
-                    <td class="text-red">Not ranking — invisible</td>
+                    <td class="text-red">Not found (page 1–3)</td>
                     <td>Beacon Pointe, Zahoranski, Stratos</td>
                 </tr>
                 <tr class="highlight-row">
@@ -728,65 +461,39 @@
             </tbody>
         </table>
 
-        <p><span class="emphasis">What this means:</span> The only way someone finds you on Google right now is by already knowing your exact name. Every person searching for annuity help in your area — <span class="text-red">hundreds of searches per month</span> — is being captured by your competitors. That's revenue walking past your door.</p>
+        <p><span class="emphasis">Bottom line:</span> The only way someone finds you on Google right now is by already knowing your name. Hundreds of searches per month from people looking for exactly what you offer — <span class="text-red">and every one of them is going to your competitors.</span></p>
+
+        <div class="seo-fix-box">
+            <h3>✓ The good news: this is fixable.</h3>
+            <p>Your niche has almost no real local competition online. The advisors ranking above you are generalists or out-of-state sites. We can get you on page 1 for these terms — and once you're there, this traffic is free, forever. No ad spend required.</p>
+            <div class="seo-fix-stats">
+                <div class="seo-fix-stat">
+                    <div class="val">350–600</div>
+                    <div class="lbl">Monthly visitors possible</div>
+                </div>
+                <div class="seo-fix-stat">
+                    <div class="val">60–90 days</div>
+                    <div class="lbl">To page 1 for local terms</div>
+                </div>
+                <div class="seo-fix-stat">
+                    <div class="val">$0</div>
+                    <div class="lbl">Ad spend required</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-hint">
+        <span>Scroll</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
     </div>
 </section>
 
-<!-- Section 2: Google Solution -->
-<section class="section" id="sec-2">
-    <div class="section-inner fade-in">
-        <div class="solution-header">✓ The Fix — How We Solve This</div>
-        <h2>The good news: your niche has almost <span class="text-green">zero real competition.</span></h2>
-        <p style="background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; max-width: 100%; margin-bottom: 30px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> This is our strategy to get you from invisible on Google to page 1. Everyone ranking above you is either a generalist or an out-of-state site. Nobody locally is doing what you do — meaning the barrier to dominating these results is low.</p>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value text-green">350–600</div>
-                <div class="stat-label">Monthly visitors possible (organic, free)</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value text-green">60–90</div>
-                <div class="stat-label">Days to page 1 for local terms</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value text-green">$0</div>
-                <div class="stat-label">Ongoing ad spend required</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value text-green">0%</div>
-                <div class="stat-label">Your effort required</div>
-            </div>
-        </div>
-
-        <h3>What we do:</h3>
-        <div class="channel-grid">
-            <div class="channel-card">
-                <div class="channel-tag tag-google">Google</div>
-                <h4>Claim & Optimize Google Business Profile</h4>
-                <p>Free, immediate visibility boost. Shows you on Google Maps and local search results for Hudson, OH.</p>
-            </div>
-            <div class="channel-card">
-                <div class="channel-tag tag-google">Google</div>
-                <h4>5 Cornerstone Articles</h4>
-                <p>Target the exact keywords your clients are typing. Written around your expertise — annuity education, fee analysis, tax strategies for business owners.</p>
-            </div>
-            <div class="channel-card">
-                <div class="channel-tag tag-google">Google</div>
-                <h4>SEO-Optimized Landing Page</h4>
-                <p>A dedicated page built to outrank the competitors for "annuity checkup" and "annuity review ohio" — driving visitors straight to your whitepaper and booking link.</p>
-            </div>
-        </div>
-
-        <p>People who find you through Google are <span class="emphasis">actively searching for what you offer.</span> They arrive for free, with no ad spend — and they're already halfway to booking a meeting.</p>
-    </div>
-</section>
-
-<!-- Section 3: Your New Site -->
-<section class="section" id="sec-3">
+<!-- Page 2: Your New Site -->
+<section class="section" id="sec-1">
     <div class="section-inner fade-in" style="text-align: center;">
         <div class="solution-header">✓ Already Built — Your New Website</div>
         <h2>We didn't just plan it.<br><span class="text-green">We already built it.</span></h2>
-        <p style="max-width: 750px; margin: 0 auto 20px; text-align: left; background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> Below are links to a complete, SEO-optimized website we've already built for Intelligent Annuity Solutions. Click the button to see the live site. This replaces the current FMG template (which Google treats as duplicate content and doesn't rank). The new site is built from scratch to target every keyword from the audit above.</p>
+        <p style="max-width: 700px; margin: 0 auto 30px; text-align: center;">We've designed and developed a complete SEO-optimized website for Intelligent Annuity Solutions — built from scratch to rank for the keywords your clients are searching. This replaces the FMG template that Google ignores.</p>
 
         <div class="stats-grid" style="margin-bottom: 40px;">
             <div class="stat-card">
@@ -807,7 +514,7 @@
             <a href="mac_site_demo/index.html" target="_blank" style="display: inline-block; background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%); color: #fff; font-size: 20px; font-weight: 700; padding: 20px 48px; border-radius: 12px; text-decoration: none; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 24px rgba(59,130,246,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 32px rgba(59,130,246,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 24px rgba(59,130,246,0.3)';">
                 View Your New Site &rarr;
             </a>
-            <p style="margin-top: 20px; font-size: 14px; color: #64748b;">Click to open your new website in a new tab</p>
+            <p style="margin-top: 20px; font-size: 14px; color: #64748b;">Opens in a new tab — let's walk through it together</p>
         </div>
 
         <div style="margin-top: 40px;">
@@ -819,265 +526,79 @@
     </div>
 </section>
 
-<!-- Section 4: Outreach Pain -->
-<section class="section" id="sec-4">
+<!-- Page 3: How We Get You Leads -->
+<section class="section" id="sec-2" style="padding-bottom: 60px;">
     <div class="section-inner fade-in">
-        <div class="pain-header">📊 Current State — Getting Meetings</div>
-        <h2>Right now, your pipeline stops<br><span class="text-red">the moment you stop personally working it.</span></h2>
-        <p style="background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; max-width: 100%; margin-bottom: 30px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> A comparison of how meetings get generated today vs. what's possible with an automated system. The left column shows the current reality — <span class="text-red">red items are things costing you time or limiting your growth.</span> The right column shows what we build for you.</p>
-
-        <div class="comparison-row">
-            <div class="comparison-col pain-col" style="border-color: rgba(239, 68, 68, 0.2);">
-                <h4 style="color: #f87171;">Where you are today</h4>
-                <ul>
-                    <li>Every meeting requires your personal time and effort</li>
-                    <li>No outbound system running when you're busy with clients</li>
-                    <li>FMG builds brand awareness — but isn't generating actual meetings</li>
-                    <li>Referrals are great but unpredictable and can't be scaled</li>
-                    <li>Pipeline goes dry the moment you stop hustling</li>
-                </ul>
-            </div>
-            <div class="comparison-col solution-col">
-                <h4>Where we take you</h4>
-                <ul>
-                    <li>Meetings appear on your calendar without you touching anything</li>
-                    <li>Outreach runs 24/7 whether you're in meetings or on vacation</li>
-                    <li>Qualified people raise their hand — then get connected to you</li>
-                    <li>Pipeline stays full without your involvement</li>
-                    <li>Your only job: show up to the meeting</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Section 5: Outreach Solution -->
-<section class="section" id="sec-5">
-    <div class="section-inner fade-in">
-        <div class="solution-header">✓ The Fix — Automated Meeting Pipeline</div>
-        <h2>Qualified business owners raise their hand.<br><span class="text-green">Then they appear on your calendar.</span></h2>
-        <p style="background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; max-width: 100%; margin-bottom: 30px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> This is the step-by-step process of how meetings land on your calendar without you doing anything. We reach out to high net worth business owners in NE Ohio on your behalf. Your name stays off everything until someone shows interest. Then we make the introduction — with full LPL compliance — and book the meeting.</p>
-
-        <div class="process-flow">
-            <div class="process-step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h4>We identify qualified business owners</h4>
-                    <p>High income, NE Ohio, sensitive to taxes and fees — the people who need what you offer.</p>
-                    <div class="step-badge">You do nothing</div>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h4>We send personalized outreach</h4>
-                    <p>Educational emails using your LPL pre-approved templates. Your name is not on these.</p>
-                    <div class="step-badge">You do nothing</div>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h4>Someone responds "I'm interested"</h4>
-                    <p>Now we send the warm introduction — this is the only email that names you, with full LPL disclosures.</p>
-                    <div class="step-badge">You do nothing</div>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h4>Meeting lands on your calendar</h4>
-                    <p>Via your booking link. You get a notification with context on who they are and why they're interested.</p>
-                    <div class="step-badge">You do nothing</div>
-                </div>
-            </div>
-            <div class="process-step">
-                <div class="step-number">5</div>
-                <div class="step-content">
-                    <h4>You show up to the meeting</h4>
-                    <p>That's the only thing you do. A qualified business owner, already interested, sitting across from you.</p>
-                    <div class="step-badge" style="background: rgba(59,130,246,0.1); border-color: rgba(59,130,246,0.2); color: #60a5fa;">Your only step</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value">500–2,000+</div>
-                <div class="stat-label">Qualifying business owners in NE Ohio</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">$300K–$1M+</div>
-                <div class="stat-label">Personal income range of targets</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value">100%</div>
-                <div class="stat-label">LPL compliant — always</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Section 6: LinkedIn Pain -->
-<section class="section" id="sec-6">
-    <div class="section-inner fade-in">
-        <div class="pain-header">📊 Current State — LinkedIn Presence</div>
-        <h2>When prospects look you up,<br><span class="text-red">there's nothing there to convince them.</span></h2>
-        <p style="background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; max-width: 100%; margin-bottom: 30px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> Every time someone gets an email or hears your name, they check your LinkedIn. The left column shows what they currently see — <span class="text-red">which is actively hurting your other marketing.</span> The right column shows what it should look like to convert visitors into meetings.</p>
-
-        <div class="comparison-row">
-            <div class="comparison-col pain-col" style="border-color: rgba(239, 68, 68, 0.2);">
-                <h4 style="color: #f87171;">What prospects see today</h4>
-                <ul>
-                    <li>Generic profile with no recent activity</li>
-                    <li>No content demonstrating your expertise</li>
-                    <li>No clear way to engage or book a conversation</li>
-                    <li>Looks like every other advisor on the platform</li>
-                    <li>No reason for a prospect to respond to outreach</li>
-                </ul>
-            </div>
-            <div class="comparison-col solution-col">
-                <h4>What they should see</h4>
-                <ul>
-                    <li>Active profile with weekly educational content</li>
-                    <li>Clear positioning: "I help NE Ohio business owners reduce fees"</li>
-                    <li>Whitepaper link and booking link front and center</li>
-                    <li>Recent posts that prove you know their world</li>
-                    <li>A profile that works like a landing page — 24/7</li>
-                </ul>
-            </div>
-        </div>
-
-        <p>A dormant LinkedIn profile <span class="emphasis" style="color: #f87171;">actively hurts</span> your other marketing. When outreach emails land and prospects check your profile — a dead page tells them to ignore you. This is costing you meetings right now.</p>
-    </div>
-</section>
-
-<!-- Section 7: LinkedIn Solution -->
-<section class="section" id="sec-7">
-    <div class="section-inner fade-in">
-        <div class="solution-header">✓ The Fix — LinkedIn on Autopilot</div>
-        <h2>We turn your LinkedIn into a lead engine.<br><span class="text-green">You never log in.</span></h2>
-        <p style="background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; max-width: 100%; margin-bottom: 30px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> Each card below is something we do for you — completely hands-off. We write the content, schedule the posts, send the connection requests, and follow up with interested prospects. All under your profile, all LPL compliant. You never touch LinkedIn.</p>
+        <div class="solution-header">✓ Your Lead Generation Plan</div>
+        <h2>Three channels working together.<br><span class="text-green">Meetings on your calendar — without your involvement.</span></h2>
+        <p>Here's how we fill your pipeline. Everything below runs on autopilot once we launch. Your only job is showing up to the meetings.</p>
 
         <div class="channel-grid">
             <div class="channel-card">
-                <div class="channel-tag tag-linkedin">LinkedIn</div>
-                <h4>Profile Optimization</h4>
-                <p>We rewrite your headline, summary, and featured section to convert profile visitors into conversations. Whitepaper link + booking link prominently placed.</p>
+                <div class="channel-tag tag-google">Google</div>
+                <h4>People Find You When They Search</h4>
+                <p>Your new site ranks for every keyword from the audit. Visitors land on your page, read your content, and book a conversation — all without you lifting a finger. This traffic is free and compounds over time.</p>
+            </div>
+            <div class="channel-card">
+                <div class="channel-tag tag-email">Email Outreach</div>
+                <h4>Qualified Prospects Reach Out to You</h4>
+                <p>We identify high net worth business owners in NE Ohio and reach out on your behalf with LPL-compliant educational content. When someone's interested, we make the warm introduction and book the meeting on your calendar.</p>
             </div>
             <div class="channel-card">
                 <div class="channel-tag tag-linkedin">LinkedIn</div>
-                <h4>Content Machine</h4>
-                <p>2-3 posts per week — educational content about hidden fees, tax strategies, and retirement planning. We write every word. You never touch it.</p>
-            </div>
-            <div class="channel-card">
-                <div class="channel-tag tag-linkedin">LinkedIn</div>
-                <h4>Targeted Connection Requests</h4>
-                <p>10 personalized connection requests daily to practice owners and business owners in NE Ohio. Pre-written messages tailored to each person's industry.</p>
-            </div>
-            <div class="channel-card">
-                <div class="channel-tag tag-linkedin">LinkedIn</div>
-                <h4>Event Lead Magnets</h4>
-                <p>We create LinkedIn Events promoting your whitepaper. RSVPs give us a list of interested people — we follow up with each one and book meetings.</p>
-            </div>
-            <div class="channel-card">
-                <div class="channel-tag tag-linkedin">LinkedIn</div>
-                <h4>Newsletter</h4>
-                <p>A monthly LinkedIn Newsletter under your name. Subscribers get push-notified every issue — building an audience that grows on its own.</p>
-            </div>
-            <div class="channel-card">
-                <div class="channel-tag tag-linkedin">LinkedIn</div>
-                <h4>Engagement Warming</h4>
-                <p>Before any connection request, we engage with a prospect's posts for 3-5 days — so they recognize your name before your message arrives.</p>
+                <h4>Your Profile Works While You Sleep</h4>
+                <p>We turn your LinkedIn into an active, credible presence — educational content, strategic connections, and a profile that converts visitors into conversations. When prospects look you up, they see an expert.</p>
             </div>
         </div>
 
-        <p style="margin-top: 20px;"><span class="emphasis">Result:</span> When outreach emails land, prospects check your LinkedIn and see an active, credible professional with relevant content — not a blank page. Connection acceptance rates double. Inbound inquiries start appearing on their own.</p>
-    </div>
-</section>
+        <div style="background: #111827; border: 1px solid #1e293b; border-radius: 16px; padding: 32px; margin-top: 40px;">
+            <h3 style="text-align: center; margin-bottom: 24px;">How These Channels Reinforce Each Other</h3>
+            <p style="text-align: center; max-width: 800px; margin: 0 auto 30px; font-size: 16px;">A prospect gets an email, checks your LinkedIn and sees active content, Googles you and finds your articles. Every channel validates the others. All roads lead to one place: a meeting on your calendar.</p>
 
-<!-- Section 8: How It All Works Together -->
-<section class="section" id="sec-8">
-    <div class="section-inner fade-in">
-        <div class="solution-header">✓ The Full Picture</div>
-        <h2>Three channels working together.<br><span class="text-green">Zero effort from you.</span></h2>
-        <p style="background: rgba(30, 41, 59, 0.5); border: 1px solid #334155; border-radius: 12px; padding: 20px; max-width: 100%; margin-bottom: 30px; font-size: 15px; color: #94a3b8;"><span class="emphasis">What you're looking at:</span> This is how all three channels (Email, LinkedIn, Google) reinforce each other. A prospect gets an email, checks your LinkedIn (sees active content), Googles you (finds your articles), and decides you're worth a conversation. All roads lead to the same place: a meeting on your calendar.</p>
-
-        <div class="stats-grid">
-            <div class="stat-card">
-                <div class="stat-value text-blue">Email</div>
-                <div class="stat-label">Direct outreach to qualified business owners — your whitepaper and fee analysis as the hook</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color: #818cf8;">LinkedIn</div>
-                <div class="stat-label">Builds credibility, warms prospects before outreach, generates inbound over time</div>
-            </div>
-            <div class="stat-card">
-                <div class="stat-value" style="color: #facc15;">Google</div>
-                <div class="stat-label">Captures people already searching for what you offer — free traffic, forever</div>
+            <div class="stats-grid">
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value text-green">500–2,000+</div>
+                    <div class="stat-label">Qualified business owners in NE Ohio we can reach</div>
+                </div>
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value text-green">350–600</div>
+                    <div class="stat-label">Monthly visitors from Google within 90 days</div>
+                </div>
+                <div class="stat-card" style="text-align: center;">
+                    <div class="stat-value text-green">100%</div>
+                    <div class="stat-label">LPL compliant — always</div>
+                </div>
             </div>
         </div>
 
-        <div class="comparison-row" style="margin-top: 40px;">
-            <div class="comparison-col pain-col" style="border-color: rgba(239, 68, 68, 0.2);">
-                <h4 style="color: #f87171;">Where things stand today</h4>
-                <ul>
-                    <li>Paying for FMG — brand awareness only, not generating meetings</li>
-                    <li>Invisible on Google — 8/100 visibility score</li>
-                    <li>LinkedIn profile sitting dormant</li>
-                    <li>No outbound system generating meetings while you work</li>
-                    <li>Calendar only fills when you personally hustle</li>
-                </ul>
+        <div style="background: #111827; border: 1px solid #1e293b; border-radius: 16px; padding: 40px; max-width: 700px; margin: 50px auto 0; text-align: center;">
+            <h3 style="margin-bottom: 20px;">What We Need From You (One Time)</h3>
+            <div style="text-align: left; max-width: 500px; margin: 0 auto;">
+                <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid #1e293b; font-size: 17px; color: #94a3b8;">
+                    <span style="width: 32px; height: 32px; border-radius: 50%; background: rgba(59,130,246,0.15); color: #3b82f6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">1</span>
+                    Review the email templates we've written (5 min)
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; border-bottom: 1px solid #1e293b; font-size: 17px; color: #94a3b8;">
+                    <span style="width: 32px; height: 32px; border-radius: 50%; background: rgba(59,130,246,0.15); color: #3b82f6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">2</span>
+                    Submit them to LPL for pre-approval
+                </div>
+                <div style="display: flex; align-items: center; gap: 14px; padding: 14px 0; font-size: 17px; color: #94a3b8;">
+                    <span style="width: 32px; height: 32px; border-radius: 50%; background: rgba(59,130,246,0.15); color: #3b82f6; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex-shrink: 0;">3</span>
+                    Tell us when approved — we launch everything
+                </div>
             </div>
-            <div class="comparison-col solution-col">
-                <h4>What it looks like with us</h4>
-                <ul>
-                    <li>Email pipeline running daily — targeting 500+ qualified owners</li>
-                    <li>Google ranking climbing — 350-600 visitors/month in 90 days</li>
-                    <li>LinkedIn active and attracting connections automatically</li>
-                    <li>Meetings appearing on your calendar without your involvement</li>
-                    <li>Your only job: show up and have the conversation</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Section 9: Next Steps -->
-<section class="section" id="sec-9">
-    <div class="section-inner fade-in cta-section">
-        <h2>What Happens Next</h2>
-        <p>We handle everything. You approve templates once, then you're done. Here's literally all we need from you:</p>
-
-        <div class="cta-box">
-            <h3>What we need from you (one time only)</h3>
-            <ol class="cta-steps">
-                <li>
-                    <span class="step-num">1</span>
-                    Review 8 email templates we've already written (5 minutes of reading)
-                </li>
-                <li>
-                    <span class="step-num">2</span>
-                    Submit them to LPL for pre-approval (you know the process)
-                </li>
-                <li>
-                    <span class="step-num">3</span>
-                    Tell us when they're approved — we launch everything
-                </li>
-            </ol>
-            <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #1e293b; text-align: center;">
+            <div style="margin-top: 24px; padding-top: 20px; border-top: 1px solid #1e293b;">
                 <p style="font-size: 20px; color: #f1f5f9; font-weight: 600; margin: 0;">After that, your only job is showing up to meetings.</p>
             </div>
         </div>
 
-        <div style="margin-top: 50px; color: #475569; font-size: 14px;">
-            <p style="margin: 0 auto; text-align: center; max-width: 500px;">Prepared by Simpl ABI for Intelligent Annuity Solutions, LLC<br>Securities offered through LPL Financial, Member FINRA/SIPC</p>
+        <div class="footer-note">
+            <p>Prepared by Simpl ABI for Intelligent Annuity Solutions, LLC<br>Securities offered through LPL Financial, Member FINRA/SIPC</p>
         </div>
     </div>
 </section>
 
 <script>
-    // Intersection Observer for fade-in animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -1088,7 +609,6 @@
 
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    // Nav dots - update on scroll
     const sections = document.querySelectorAll('.section');
     const dots = document.querySelectorAll('.nav-dot');
 
@@ -1107,7 +627,6 @@
 
     sections.forEach(sec => sectionObserver.observe(sec));
 
-    // Click nav dots to scroll
     dots.forEach(dot => {
         dot.addEventListener('click', () => {
             const idx = dot.getAttribute('data-section');
