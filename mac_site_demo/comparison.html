@@ -3,230 +3,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Redesign Comparison | checkannuity.com</title>
+    <title>Mac — What We Found & What We Built</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .slide-in { animation: slideIn 0.5s ease-out; }
-        @keyframes slideIn { from { opacity: 0; transform: translateX(-20px); } to { opacity: 1; transform: translateX(0); } }
+        body { font-family: 'Inter', sans-serif; background: #0b1120; }
+        .gradient-text { background: linear-gradient(135deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text-green { background: linear-gradient(135deg, #34d399, #60a5fa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .gradient-text-gold { background: linear-gradient(135deg, #fbbf24, #f59e0b); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow-red { box-shadow: 0 0 40px rgba(239, 68, 68, 0.15); }
+        .glow-green { box-shadow: 0 0 40px rgba(52, 211, 153, 0.15); }
+        .glow-purple { box-shadow: 0 0 40px rgba(167, 139, 250, 0.2); }
+        .section-divider { height: 1px; background: linear-gradient(90deg, transparent, rgba(148, 163, 184, 0.2), transparent); }
+        .score-bar { background: linear-gradient(90deg, #ef4444 0%, #ef4444 8%, #1e293b 8%); height: 8px; border-radius: 4px; }
+        .score-bar-competitor { height: 6px; border-radius: 3px; }
     </style>
 </head>
-<body class="bg-gray-900 text-white min-h-screen">
+<body class="text-white">
 
-    <!-- Header -->
-    <header class="bg-gray-800 border-b border-gray-700 py-6">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="flex justify-between items-center">
-                <div>
-                    <h1 class="text-2xl font-bold">checkannuity.com Redesign</h1>
-                    <p class="text-gray-400 text-sm mt-1">Prepared by Simpl ABI for Bryan McInerney | May 2026</p>
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 1: YOUR GOOGLE PRESENCE IS A PROBLEM   -->
+    <!-- ═══════════════════════════════════════════════ -->
+    
+    <section class="min-h-screen flex items-center py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            
+            <div class="inline-block bg-red-500/10 border border-red-500/30 rounded-full px-5 py-2 mb-8">
+                <span class="text-red-400 text-sm font-medium">GOOGLE VISIBILITY AUDIT — checkannuity.com</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                Right now, nobody can find you<br>
+                <span class="gradient-text">on Google.</span>
+            </h1>
+            
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-14">
+                We tested every search term your ideal clients would type. 
+                Your site doesn't appear on the first 3 pages for any of them.
+            </p>
+
+            <!-- Score Display -->
+            <div class="bg-slate-800/60 border border-slate-700/50 rounded-2xl p-8 mb-10 glow-red max-w-lg mx-auto">
+                <p class="text-slate-400 text-sm uppercase tracking-wider mb-3">Your Google Visibility Score</p>
+                <p class="text-7xl font-bold text-red-400 mb-2">8<span class="text-3xl text-slate-500">/100</span></p>
+                <div class="score-bar w-full mt-4"></div>
+                <p class="text-slate-500 text-sm mt-3">Only appears when someone already knows your name</p>
+            </div>
+
+            <!-- Keyword Table -->
+            <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl overflow-hidden text-left mt-12 max-w-2xl mx-auto">
+                <div class="px-6 py-4 border-b border-slate-700/50">
+                    <p class="text-sm font-medium text-slate-300">What your prospects are searching — and who they find instead:</p>
                 </div>
-                <a href="index.html" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors">
-                    View Full Demo &rarr;
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <!-- Intro -->
-    <section class="py-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <div class="bg-gray-800 rounded-2xl p-8 mb-12">
-                <h2 class="text-xl font-bold mb-4 text-blue-400">What We Did</h2>
-                <p class="text-gray-300 text-lg leading-relaxed mb-6">
-                    We audited your current website, identified the SEO gaps preventing you from appearing on Google, 
-                    and built a redesigned version that targets the exact keywords your ideal clients are searching for &mdash; 
-                    while maintaining full LPL/FINRA compliance.
-                </p>
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="bg-gray-700 rounded-xl p-5">
-                        <p class="text-3xl font-bold text-red-400">8/100</p>
-                        <p class="text-gray-400 text-sm mt-1">Current Google Visibility</p>
+                <div class="divide-y divide-slate-700/30 text-sm">
+                    <div class="px-6 py-3 flex justify-between items-center">
+                        <span class="text-slate-300">"annuity advisor hudson ohio"</span>
+                        <span class="text-red-400 font-medium">Not found</span>
                     </div>
-                    <div class="bg-gray-700 rounded-xl p-5">
-                        <p class="text-3xl font-bold text-green-400">65-75</p>
-                        <p class="text-gray-400 text-sm mt-1">Projected Score (90 days)</p>
+                    <div class="px-6 py-3 flex justify-between items-center">
+                        <span class="text-slate-300">"financial advisor hudson ohio"</span>
+                        <span class="text-red-400 font-medium">Not found</span>
                     </div>
-                    <div class="bg-gray-700 rounded-xl p-5">
-                        <p class="text-3xl font-bold text-blue-400">350-600</p>
-                        <p class="text-gray-400 text-sm mt-1">Monthly Organic Visitors (projected)</p>
+                    <div class="px-6 py-3 flex justify-between items-center">
+                        <span class="text-slate-300">"annuity review northeast ohio"</span>
+                        <span class="text-red-400 font-medium">Not found</span>
+                    </div>
+                    <div class="px-6 py-3 flex justify-between items-center">
+                        <span class="text-slate-300">"annuity fees explained"</span>
+                        <span class="text-red-400 font-medium">Not found</span>
+                    </div>
+                    <div class="px-6 py-3 flex justify-between items-center">
+                        <span class="text-slate-300">"should I keep my annuity"</span>
+                        <span class="text-red-400 font-medium">Not found</span>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- Comparison Table -->
-    <section class="pb-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-8">Before &amp; After: What Changed</h2>
-            <div class="bg-gray-800 rounded-xl overflow-hidden">
-                <table class="w-full">
-                    <thead>
-                        <tr class="border-b border-gray-700">
-                            <th class="px-6 py-4 text-left text-sm font-medium text-gray-400">Element</th>
-                            <th class="px-6 py-4 text-left text-sm font-medium text-red-400">Current Site</th>
-                            <th class="px-6 py-4 text-left text-sm font-medium text-green-400">Redesigned</th>
-                        </tr>
-                    </thead>
-                    <tbody class="divide-y divide-gray-700 text-sm">
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Page Title</td>
-                            <td class="px-6 py-4 text-gray-400">"Home | Intelligent Annuity Solutions, LLC"</td>
-                            <td class="px-6 py-4 text-gray-200">"Annuity Education & Fee Analysis | Hudson, OH | Intelligent Annuity Solutions"</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Meta Description</td>
-                            <td class="px-6 py-4 text-gray-400">None (Google auto-generates)</td>
-                            <td class="px-6 py-4 text-gray-200">Keyword-rich description targeting "annuity education" + "fee analysis" + "Northeast Ohio"</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Schema Markup</td>
-                            <td class="px-6 py-4 text-gray-400">None</td>
-                            <td class="px-6 py-4 text-gray-200">Full LocalBusiness + FinancialService schema with address, geo, hours, service area</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">H1 Headline</td>
-                            <td class="px-6 py-4 text-gray-400">"Understand Annuities Inside and Out"</td>
-                            <td class="px-6 py-4 text-gray-200">"Do You Actually Understand What Your Annuity Costs You?" (targets pain point + keyword)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Content Strategy</td>
-                            <td class="px-6 py-4 text-gray-400">Generic FMG library articles (dog bites, pickleball, etc.)</td>
-                            <td class="px-6 py-4 text-gray-200">6 original SEO articles targeting real search keywords your prospects use</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Local SEO</td>
-                            <td class="px-6 py-4 text-gray-400">Hudson address in footer only</td>
-                            <td class="px-6 py-4 text-gray-200">Schema markup + "Areas Served" section listing all NE Ohio cities + counties</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Target Audience</td>
-                            <td class="px-6 py-4 text-gray-400">Generic ("individuals seeking clarity")</td>
-                            <td class="px-6 py-4 text-gray-200">Specific: HNW business owners, current annuity owners, prospective buyers</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Call to Action</td>
-                            <td class="px-6 py-4 text-gray-400">"Let's Talk!" (generic)</td>
-                            <td class="px-6 py-4 text-gray-200">"Request Your Free Annuity Review" (specific, value-driven)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Differentiation</td>
-                            <td class="px-6 py-4 text-gray-400">Buried in About page copy</td>
-                            <td class="px-6 py-4 text-gray-200">Front-and-center: "20 years on the insurance company side, now on yours"</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">LPL Compliance</td>
-                            <td class="px-6 py-4 text-green-400">&#10003; Compliant</td>
-                            <td class="px-6 py-4 text-green-400">&#10003; Compliant (all disclosures preserved + enhanced)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">BrokerCheck Link</td>
-                            <td class="px-6 py-4 text-green-400">&#10003; Present</td>
-                            <td class="px-6 py-4 text-green-400">&#10003; More prominent (top bar + footer)</td>
-                        </tr>
-                        <tr>
-                            <td class="px-6 py-4 font-medium">Mobile Responsive</td>
-                            <td class="px-6 py-4 text-yellow-400">Basic (FMG template)</td>
-                            <td class="px-6 py-4 text-green-400">&#10003; Full responsive with Tailwind CSS</td>
-                        </tr>
-                    </tbody>
-                </table>
+            <!-- Competitors -->
+            <div class="mt-12 max-w-lg mx-auto text-left">
+                <p class="text-sm text-slate-400 uppercase tracking-wider mb-4 text-center">Who IS showing up instead of you:</p>
+                <div class="space-y-3">
+                    <div class="flex items-center gap-3">
+                        <div class="score-bar-competitor flex-1 rounded-full" style="background: linear-gradient(90deg, #22c55e 0%, #22c55e 72%, #1e293b 72%)"></div>
+                        <span class="text-xs text-slate-400 w-32 text-right">Nye Wealth — 72</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="score-bar-competitor flex-1 rounded-full" style="background: linear-gradient(90deg, #22c55e 0%, #22c55e 68%, #1e293b 68%)"></div>
+                        <span class="text-xs text-slate-400 w-32 text-right">UBS (Becker) — 68</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="score-bar-competitor flex-1 rounded-full" style="background: linear-gradient(90deg, #eab308 0%, #eab308 61%, #1e293b 61%)"></div>
+                        <span class="text-xs text-slate-400 w-32 text-right">Serious Money OH — 61</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="score-bar-competitor flex-1 rounded-full" style="background: linear-gradient(90deg, #eab308 0%, #eab308 55%, #1e293b 55%)"></div>
+                        <span class="text-xs text-slate-400 w-32 text-right">Western Reserve — 55</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="score-bar-competitor flex-1 rounded-full" style="background: linear-gradient(90deg, #ef4444 0%, #ef4444 8%, #1e293b 8%)"></div>
+                        <span class="text-xs text-slate-400 w-32 text-right font-medium text-red-400">You — 8</span>
+                    </div>
+                </div>
             </div>
+
+            <p class="text-slate-500 text-sm mt-12">Every month, 2,000+ people search for exactly what you offer — and land on your competitors instead.</p>
+
         </div>
     </section>
 
-    <!-- SEO Targets -->
-    <section class="pb-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-8">Keywords This Site Is Built to Rank For</h2>
-            <div class="grid md:grid-cols-2 gap-4">
-                <div class="bg-gray-800 rounded-xl p-5 flex justify-between items-center">
-                    <span class="text-gray-200">"annuity advisor hudson ohio"</span>
-                    <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full">~110 searches/mo</span>
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 2: WE ALREADY BUILT YOUR NEW SITE      -->
+    <!-- ═══════════════════════════════════════════════ -->
+    
+    <section class="min-h-screen flex items-center py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            
+            <div class="inline-block bg-green-500/10 border border-green-500/30 rounded-full px-5 py-2 mb-8">
+                <span class="text-green-400 text-sm font-medium">ALREADY BUILT — YOUR NEW WEBSITE</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                We didn't just plan it.<br>
+                <span class="gradient-text-green">We already built it.</span>
+            </h1>
+            
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-12">
+                We've already designed and built a complete SEO-optimized website for Intelligent Annuity Solutions — built to rank for the keywords your clients are searching.
+            </p>
+
+            <!-- CTA Button -->
+            <a href="index.html" target="_blank" class="inline-block bg-gradient-to-r from-purple-600 to-blue-600 text-white px-10 py-5 rounded-xl font-semibold text-lg hover:from-purple-500 hover:to-blue-500 transition-all glow-purple mb-4">
+                View Your New Site &rarr;
+            </a>
+            <p class="text-slate-500 text-sm mb-16">Opens in a new tab — let's walk through it together</p>
+
+            <!-- Key Changes -->
+            <div class="grid md:grid-cols-3 gap-6 text-left max-w-3xl mx-auto">
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6">
+                    <p class="text-green-400 text-2xl font-bold mb-2">SEO</p>
+                    <p class="text-slate-400 text-sm">Every page targets real search keywords. Schema markup tells Google exactly what you do and where you are.</p>
                 </div>
-                <div class="bg-gray-800 rounded-xl p-5 flex justify-between items-center">
-                    <span class="text-gray-200">"annuity fees explained"</span>
-                    <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full">~1,200 searches/mo</span>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6">
+                    <p class="text-blue-400 text-2xl font-bold mb-2">Design</p>
+                    <p class="text-slate-400 text-sm">Premium look that matches your HNW clientele. Not a template — custom built for your brand and positioning.</p>
                 </div>
-                <div class="bg-gray-800 rounded-xl p-5 flex justify-between items-center">
-                    <span class="text-gray-200">"should I keep my annuity"</span>
-                    <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full">~880 searches/mo</span>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-5 flex justify-between items-center">
-                    <span class="text-gray-200">"annuity review northeast ohio"</span>
-                    <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full">~480 searches/mo</span>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-5 flex justify-between items-center">
-                    <span class="text-gray-200">"financial advisor hudson ohio"</span>
-                    <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full">~110 searches/mo</span>
-                </div>
-                <div class="bg-gray-800 rounded-xl p-5 flex justify-between items-center">
-                    <span class="text-gray-200">"annuity tax rules ohio"</span>
-                    <span class="text-xs bg-green-900 text-green-300 px-2 py-1 rounded-full">~320 searches/mo</span>
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6">
+                    <p class="text-purple-400 text-2xl font-bold mb-2">Compliant</p>
+                    <p class="text-slate-400 text-sm">Full LPL/FINRA compliance maintained. BrokerCheck, disclosures, risk language — all preserved and enhanced.</p>
                 </div>
             </div>
+
+            <div class="mt-12">
+                <a href="comparison.html" class="text-slate-400 hover:text-white underline text-sm transition-colors">See the full Before &amp; After comparison &rarr;</a>
+            </div>
+
         </div>
     </section>
 
-    <!-- Compliance Section -->
-    <section class="pb-12">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-2xl font-bold mb-8">LPL/FINRA Compliance Maintained</h2>
-            <div class="bg-gray-800 rounded-xl p-8">
-                <p class="text-gray-300 mb-6">Every element of the redesign maintains full regulatory compliance:</p>
-                <div class="grid md:grid-cols-2 gap-4 text-sm">
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">BrokerCheck link prominently displayed (FINRA Rule 2210(d)(8))</span>
+    <div class="section-divider max-w-4xl mx-auto"></div>
+
+    <!-- ═══════════════════════════════════════════════ -->
+    <!-- SECTION 3: WHAT WE DELIVER EVERY WEEK          -->
+    <!-- ═══════════════════════════════════════════════ -->
+    
+    <section class="min-h-screen flex items-center py-20">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            
+            <div class="inline-block bg-amber-500/10 border border-amber-500/30 rounded-full px-5 py-2 mb-8">
+                <span class="text-amber-400 text-sm font-medium">THE FULL PICTURE — WHAT YOU GET</span>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                The site is just the start.<br>
+                <span class="gradient-text-gold">Here's what happens every week.</span>
+            </h1>
+            
+            <p class="text-xl text-slate-400 max-w-2xl mx-auto mb-14">
+                We run your entire marketing operation. You show up to meetings with people who already want to talk to you. That's it.
+            </p>
+
+            <!-- Weekly Deliverables -->
+            <div class="space-y-4 text-left max-w-2xl mx-auto">
+                
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 flex gap-5 items-start">
+                    <div class="w-10 h-10 bg-blue-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-blue-400 text-lg font-bold">@</span>
                     </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">LPL Financial / FINRA / SIPC disclosure in footer</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">No performance guarantees or absolute claims</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">Educational framing throughout (not investment advice)</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">Fixed annuity risk disclosure included</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">Variable annuity risk disclosure included</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">State registration / business limitation language</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">Form CRS and Privacy Policy links in footer</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">No testimonials (would require additional compliance review)</span>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <span class="text-green-400 text-lg">&#10003;</span>
-                        <span class="text-gray-300">Fair, balanced, not misleading (FINRA Rule 2210 standard)</span>
+                    <div>
+                        <h3 class="font-semibold text-white mb-1">Personalized Email Outreach</h3>
+                        <p class="text-slate-400 text-sm">Targeted emails to prospects in your market — dentists, doctors, lawyers, business owners across NE Ohio. Personalized, compliant, automated. You never touch it.</p>
                     </div>
                 </div>
+
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 flex gap-5 items-start">
+                    <div class="w-10 h-10 bg-sky-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-sky-400 text-lg font-bold">in</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-1">LinkedIn Presence &amp; Outreach</h3>
+                        <p class="text-slate-400 text-sm">Connection requests, content posted under your name, engagement with prospects — building your professional network and credibility on autopilot.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 flex gap-5 items-start">
+                    <div class="w-10 h-10 bg-green-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-green-400 text-lg font-bold">G</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-1">Google &amp; SEO</h3>
+                        <p class="text-slate-400 text-sm">New content published monthly targeting the keywords your prospects search. Your Google visibility score climbs every month. People start finding you organically.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 flex gap-5 items-start">
+                    <div class="w-10 h-10 bg-purple-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-purple-400 text-lg font-bold">&#9783;</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-1">Event &amp; Community Networking</h3>
+                        <p class="text-slate-400 text-sm">We find and attend relevant local events on your behalf, connect with attendees, and follow up. New warm introductions flowing in every week.</p>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 border border-slate-700/50 rounded-xl p-6 flex gap-5 items-start">
+                    <div class="w-10 h-10 bg-amber-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                        <span class="text-amber-400 text-lg font-bold">&#8594;</span>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white mb-1">Meetings on Your Calendar</h3>
+                        <p class="text-slate-400 text-sm">Interested prospects get booked directly on your calendar. You show up, have the conversation, close the client. Everything before that meeting is handled by us.</p>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- The Promise -->
+            <div class="mt-14 bg-slate-800/60 border border-amber-500/20 rounded-2xl p-8 max-w-2xl mx-auto glow-purple">
+                <p class="text-2xl font-bold text-white mb-3">Your effort: zero.</p>
+                <p class="text-slate-400">We handle 100% of marketing. You handle 100% of the meetings we put in front of you. That's the split.</p>
+            </div>
+
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 border-t border-gray-800">
-        <div class="max-w-6xl mx-auto px-6 text-center text-gray-500 text-sm">
-            <p>Prepared by Simpl ABI | Samuel J. Karman, CEO | simplabiwebsite.com | 330-607-2668</p>
-            <p class="mt-2">This is a demonstration mockup. Deployment requires LPL compliance review and approval.</p>
+    <footer class="py-10 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto px-6 text-center">
+            <p class="text-slate-500 text-sm">Prepared by Simpl ABI | Samuel J. Karman, CEO | simplabiwebsite.com | 330-607-2668</p>
         </div>
     </footer>
 
